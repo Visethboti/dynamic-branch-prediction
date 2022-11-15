@@ -7,9 +7,9 @@
 
 using namespace std;
 
-class CorrelatingBranchPredictor {
+class DynamicBranchPredictor {
     public:
-        CorrelatingBranchPredictor(int theM, int theN, int theNumOfBranch) {
+        DynamicBranchPredictor(int theM, int theN, int theNumOfBranch) {
             m = theM; // m num of history bit
             n = theN; // n-bits
             numOfBranch = theNumOfBranch;
@@ -120,40 +120,40 @@ class CorrelatingBranchPredictor {
 
 int main()
 {
-    CorrelatingBranchPredictor correlatingBranchPredictor(3,1,1);
-    correlatingBranchPredictor.init(false);
-    correlatingBranchPredictor.printBuffer();
+    DynamicBranchPredictor DynamicBranchPredictor(3,1,1);
+    DynamicBranchPredictor.init(false);
+    DynamicBranchPredictor.printBuffer();
     /*
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(true, 1);
-    correlatingBranchPredictor.printBuffer();
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(true, 1);
+    DynamicBranchPredictor.printBuffer();
 
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(true, 1);
-    correlatingBranchPredictor.printBuffer();
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(true, 1);
+    DynamicBranchPredictor.printBuffer();
     */
 
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(true, 1);
-    correlatingBranchPredictor.printBuffer();
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(true, 1);
+    DynamicBranchPredictor.printBuffer();
 
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(true, 1);
-    correlatingBranchPredictor.printBuffer();
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(true, 1);
+    DynamicBranchPredictor.printBuffer();
 
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(false, 1);
-    correlatingBranchPredictor.predict(true, 1);
-    correlatingBranchPredictor.printBuffer();
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(false, 1);
+    DynamicBranchPredictor.predict(true, 1);
+    DynamicBranchPredictor.printBuffer();
 
-    correlatingBranchPredictor.printStat();
+    DynamicBranchPredictor.printStat();
 }

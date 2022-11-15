@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9f95d82a-8f10-4c7d-af50-51405e819d34": {
+      "ProjectGuid": "9f95d82a-8f10-4c7d-af50-51405e819d34",
+      "DisplayName": "Branch-Prediction",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

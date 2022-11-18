@@ -1,4 +1,6 @@
 ﻿  Branch-Prediction.cpp
-C:\Users\viset\source\repos\Branch-Prediction\Branch-Prediction\Branch-Prediction.cpp(17,42): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\viset\source\repos\Branch-Prediction\Branch-Prediction\Branch-Prediction.cpp(79,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\viset\source\repos\Branch-Prediction\Branch-Prediction\Branch-Prediction.cpp(19,38): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\viset\source\repos\Branch-Prediction\Branch-Prediction\Branch-Prediction.cpp(80,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\viset\source\repos\Branch-Prediction\Branch-Prediction\Branch-Prediction.cpp(167,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\viset\source\repos\Branch-Prediction\Branch-Prediction\Branch-Prediction.cpp(232,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Branch-Prediction.vcxproj -> C:\Users\viset\source\repos\Branch-Prediction\x64\Debug\Branch-Prediction.exe

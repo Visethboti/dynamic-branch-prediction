@@ -161,7 +161,7 @@ void swap(int* x, int* y)
 
 
 //Function definition for quick sort iterative method
-void quickSort(vector<int> arr, DynamicBranchPredictor& dynamicBranchPredictor)
+vector<int> quickSort(vector<int> arr, DynamicBranchPredictor& dynamicBranchPredictor)
 {
     int lowest = 0;
     int highest = arr.size() - 1;
@@ -224,6 +224,8 @@ void quickSort(vector<int> arr, DynamicBranchPredictor& dynamicBranchPredictor)
         dynamicBranchPredictor.predict(false, 5);
     }
     dynamicBranchPredictor.predict(false, 1);
+
+    return arr;
 }
 
 // Function to print the array
@@ -248,7 +250,7 @@ int main()
     vector<int> arr1;
     copy(arr.begin(), arr.end(), back_inserter(arr1));
     
-    quickSort(arr1, dynamicBranchPredictor1);
+    arr1 = quickSort(arr1, dynamicBranchPredictor1);
     dynamicBranchPredictor1.printStat();
     printArray(arr1);
 
@@ -256,7 +258,7 @@ int main()
     vector<int> arr2;
     copy(arr.begin(), arr.end(), back_inserter(arr2));
 
-    quickSort(arr2, dynamicBranchPredictor2);
+    arr2 = quickSort(arr2, dynamicBranchPredictor2);
     dynamicBranchPredictor2.printStat();
     printArray(arr2);
    
